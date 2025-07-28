@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employment Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .blue-header {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .gray-box {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    td, th {
+      border: 1px solid #000;
+      padding: 5px;
+    }
+    .no-border td {
+      border: none;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    .checkbox-group {
+      display: flex;
+      gap: 15px;
+      margin: 5px 0;
+    }
+    .days-availability {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+    .education-header {
+      text-align: center;
+      font-weight: bold;
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Employment Application Form</h2>
+  <div class="blue-header">
+    PLEASE PRINT ALL INFORMATION REQUESTED EXCEPT SIGNATURE
+  </div>
+  <div class="gray-box">
+    <strong>APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS</strong><br>
+    PLEASE COMPLETE PAGES 1-5.<br><br>
+    <label>Date:</label> <input type="date">
+  </div>
+  <table class="no-border">
+    <tr>
+      <td><label>Name:</label></td>
+      <td><input type="text" placeholder="Last"></td>
+      <td><input type="text" placeholder="First"></td>
+      <td><input type="text" placeholder="Middle"></td>
+      <td><input type="text" placeholder="Maiden"></td>
+    </tr>
+    <tr>
+      <td><label>Present Address:</label></td>
+      <td colspan="2"><input type="text" placeholder="Street"></td>
+      <td><input type="text" placeholder="City"></td>
+      <td><input type="text" placeholder="State & Zip"></td>
+    </tr>
+    <tr>
+      <td><label>How Long:</label></td>
+      <td><input type="text"></td>
+      <td colspan="2"><label>Social Security No:</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Telephone:</label></td>
+      <td><input type="tel"></td>
+      <td colspan="3"><label>If under 18, please list age:</label> <input type="number"></td>
+    </tr>
+    <tr>
+      <td><label>Position Applied For:</label></td>
+      <td><input type="text"></td>
+      <td colspan="3" rowspan="2">
+        <label>Days/Hours Available to Work:</label>
+        <div class="days-availability">
+          <div>No Pref</div>
+          <div><input type="checkbox"> Mon</div>
+          <div><input type="checkbox"> Tue</div>
+          <div><input type="checkbox"> Wed</div>
+          <div><input type="checkbox"> Thur</div>
+          <div><input type="checkbox"> Fri</div>
+          <div><input type="checkbox"> Sat</div>
+          <div><input type="checkbox"> Sun</div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Salary Desired:</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>How many hours can you work weekly?</label></td>
+      <td colspan="2"><input type="text"></td>
+      <td><label>Can you work nights?</label></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td><label>Employment Desired:</label></td>
+      <td colspan="4">
+        <div class="checkbox-group">
+          <label><input type="checkbox"> Full-Time Only</label>
+          <label><input type="checkbox"> Part-Time Only</label>
+          <label><input type="checkbox"> Full- or Part-Time</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td><label>When available for work?</label></td>
+      <td colspan="4"><input type="text"></td>
+    </tr>
+  </table>
+  <br><br>
+  <div class="education-header">EDUCATION & OTHER INFORMATION</div>
+  <table>
+    <tr>
+      <th>Type of School</th>
+      <th>Name of School</th>
+      <th>Location (Complete mailing address)</th>
+      <th>No. of Years Completed</th>
+      <th>Major & Degree</th>
+    </tr>
+    <tr>
+      <td>High School</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>College</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Bus. or Trade School</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Professional School</td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+      <td><input type="text"></td>
+    </tr>
+  </table>
+</body>
+</html>
